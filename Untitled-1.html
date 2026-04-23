@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Glossary TTS</title>
+
+<style>
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background: #f1f5f9;
+  padding: 20px;
+}
+
+/* TABLE */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+th, td {
+  border: 1px solid #e2e8f0;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background: #3b82f6;
+  color: white;
+}
+
+/* SPEAKER BUTTON */
+.mg-speaker-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 15px;
+  transition: all 0.2s ease;
+}
+
+.mg-speaker-btn:hover {
+  background: #3b82f6;
+  color: #fff;
+  border-color: #3b82f6;
+  transform: scale(1.1);
+}
+
+.mg-speaking {
+  background: #2563eb !important;
+  color: white !important;
+}
+.mg-audio {
+  width: 60px;
+}
+</style>
+</head>
+
+<body>
+
+<h2>Glossary (TTS Version)</h2>
+
+<table class="mg-table">
+<thead>
+<tr>
+<th>Audio</th>
+<th>Word</th>
+<th>Form</th>
+<th>Pronunciation</th>
+<th>Meaning</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Abrupt', this)">🔊</button></td><td>Abrupt</td><td>adj</td><td>[ə'brʌpt]</td><td>Bất ngờ, đột ngột</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Absorber', this)">🔊</button></td><td>Absorber</td><td>n</td><td>[əb'sɔ:bə]</td><td>Bộ hấp thu</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Adjacent', this)">🔊</button></td><td>Adjacent</td><td>adj</td><td>[əˈʤeɪsənt]</td><td>Kề sát</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Air fuel mixture', this)">🔊</button></td><td>Air-fuel mixture</td><td>n</td><td>[ɛr-ˈfjuəl ˈmɪksʧər]</td><td>Hỗn hợp không khí và nhiên liệu</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Anchor', this)">🔊</button></td><td>Anchor</td><td>n</td><td>['æŋkə]</td><td>Điểm tựa</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Armature', this)">🔊</button></td><td>Armature</td><td>n</td><td>[armature]</td><td>Phần ứng (điện)</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Automobile', this)">🔊</button></td><td>Automobile</td><td>n</td><td>[ˈɔtəmoʊˌbil]</td><td>Xe ô tô</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Axle', this)">🔊</button></td><td>Axle</td><td>n</td><td>['æksl]</td><td>Cầu xe</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Brass', this)">🔊</button></td><td>Brass</td><td>n, adj</td><td>[brɑ:s]</td><td>Đồng thau</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Bump', this)">🔊</button></td><td>Bump</td><td>v</td><td>[bʌmp]</td><td>Va, đụng</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Bypass', this)">🔊</button></td><td>Bypass</td><td>n</td><td>[ˈbaɪˌpæs]</td><td>Lối tắt</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Camshaft', this)">🔊</button></td><td>Camshaft</td><td>n</td><td>[ˈkæmˌʃæft]</td><td>Trục cam</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Camshaft drive chain', this)">🔊</button></td><td>Camshaft drive chain</td><td>n</td><td>[ˈkæmˌʃæft draɪv ʧeɪn]</td><td>Xích dẫn động trục cam</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Catalytic converter', this)">🔊</button></td><td>Catalytic converter</td><td>n</td><td>[ˌkætəˈlɪtɪk kənˈvɜrtər]</td><td>Bộ chuyển đổi xúc tác</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Chemical reaction', this)">🔊</button></td><td>Chemical reaction</td><td>n</td><td>[ˈkɛməkəl riˈækʃən]</td><td>Phản ứng hóa học</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Clamp', this)">🔊</button></td><td>Clamp</td><td>n</td><td>[klæmp]</td><td>Kẹp chặt</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Combustion chamber', this)">🔊</button></td><td>Combustion chamber</td><td>n</td><td>[kəmˈbʌsʧən ˈʧeɪmbər]</td><td>Buồng cháy</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Common rail system', this)">🔊</button></td><td>Common-rail system</td><td>n</td><td>[ˈkɑmənreɪl ˈsɪstəm]</td><td>Hệ thống phun dầu điện tử</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Commutator', this)">🔊</button></td><td>Commutator</td><td>n</td><td>[ˌkɑmjəˈteɪtər]</td><td>Bộ đảo mạch</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Compression ignition engine', this)">🔊</button></td><td>Compression ignition engine</td><td>n</td><td>[kəmˈprɛʃən ɪgˈnɪʃən]</td><td>Động cơ cháy do nén</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Comprise', this)">🔊</button></td><td>Comprise</td><td>v</td><td>[kəmˈpraɪz]</td><td>Gồm có</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Condensation', this)">🔊</button></td><td>Condensation</td><td>n</td><td>[ˌkɑndənˈseɪʃən]</td><td>Sự ngưng</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Conduct', this)">🔊</button></td><td>Conduct</td><td>v</td><td>[ˈkɑndʌkt]</td><td>Dẫn tới</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Correct proportion', this)">🔊</button></td><td>Correct proportion</td><td>n</td><td>[kəˈrɛkt prəˈpɔrʃən]</td><td>Tỉ lệ chính xác</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Corrosion', this)">🔊</button></td><td>Corrosion</td><td>n</td><td>[kəˈroʊʒən]</td><td>Sự ăn mòn</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Cushion', this)">🔊</button></td><td>Cushion</td><td>n</td><td>['kuʃn]</td><td>Miếng đệm</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Cylinder', this)">🔊</button></td><td>Cylinder</td><td>n</td><td>[ˈsɪləndər]</td><td>Xi lanh</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Damper', this)">🔊</button></td><td>Damper</td><td>n</td><td>['dæmpə]</td><td>Giảm chấn</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Differential', this)">🔊</button></td><td>Differential</td><td>n</td><td>[ˌdɪfəˈrɛnʃəl]</td><td>Vi sai</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Direct injection engines', this)">🔊</button></td><td>Direct injection engines</td><td>n</td><td>[dəˈrɛkt ɪnˈʤɛkʃən]</td><td>Động cơ phun nhiên liệu trực tiếp</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Dissipate', this)">🔊</button></td><td>Dissipate</td><td>v</td><td>[ˈdɪsəˌpeɪt]</td><td>Tản nhiệt</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Drive shaft', this)">🔊</button></td><td>Drive-shaft</td><td>n</td><td>[draɪv ʃæft]</td><td>Trục các đăng</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Drivetrain', this)">🔊</button></td><td>Drivetrain</td><td>n</td><td>[drivetrain]</td><td>Hệ thống truyền lực</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Drum', this)">🔊</button></td><td>Drum</td><td>n</td><td>[drʌm]</td><td>Tang trống</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Electric fuel pump', this)">🔊</button></td><td>Electric fuel pump</td><td>n</td><td>[ɪˈlɛktrɪk ˈfjuəl pʌmp]</td><td>Bơm nhiên liệu bằng điện</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Electrical spark', this)">🔊</button></td><td>Electrical spark</td><td>n</td><td>[ɪˈlɛktrɪkəl spɑrk]</td><td>Tia lửa điện</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Electrochemical reaction', this)">🔊</button></td><td>Electrochemical reaction</td><td>n</td><td>[əˌlɛktroʊˈkɛmɪkəl riˈækʃən]</td><td>Phản ứng điện hóa</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Electrode', this)">🔊</button></td><td>Electrode</td><td>n</td><td>[ɪˈlɛktroʊd]</td><td>Điện cực</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Engage', this)">🔊</button></td><td>Engage</td><td>n</td><td>[ɪnˈgeɪdʒ]</td><td>Gài, khớp</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Engine', this)">🔊</button></td><td>Engine</td><td>n</td><td>[ˈɛnʤən]</td><td>Động cơ</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Exert', this)">🔊</button></td><td>Exert</td><td>n</td><td>[ɪgˈzɜːt]</td><td>Đưa vào sử dụng</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Exhaust gas', this)">🔊</button></td><td>Exhaust gas</td><td>n</td><td>[ɪgˈzɑst gæs]</td><td>Khí thải</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Exhaust manifold', this)">🔊</button></td><td>Exhaust manifold</td><td>n</td><td>[ɪgˈzɑst ˈmænəˌfoʊld]</td><td>Cổ góp thải</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Exhaust valve', this)">🔊</button></td><td>Exhaust valve</td><td>n</td><td>[ɪgˈzɑst vælv]</td><td>Xupap thải</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Field coil', this)">🔊</button></td><td>Field coil</td><td>n</td><td>[fild kɔɪl]</td><td>Cuộn kích từ</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Filter', this)">🔊</button></td><td>Filter</td><td>n</td><td>[ˈfɪltər]</td><td>Bầu lọc</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Fork', this)">🔊</button></td><td>Fork</td><td>n</td><td>[fɔ:k]</td><td>Càng mở</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Frame', this)">🔊</button></td><td>Frame</td><td>n</td><td>[freɪm]</td><td>Khung xe</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Friction', this)">🔊</button></td><td>Friction</td><td>n</td><td>[ˈfrɪkʃən]</td><td>Sự ma sát</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Fuel', this)">🔊</button></td><td>Fuel</td><td>n</td><td>[ˈfjuəl]</td><td>Nhiên liệu</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Fuel injector', this)">🔊</button></td><td>Fuel injector</td><td>n</td><td>[ˈfjuəl ɪnˈʤɛktər]</td><td>Vòi phun nhiên liệu</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Fuel transfer pump', this)">🔊</button></td><td>Fuel transfer pump</td><td>n</td><td>[ˈfjuəl ˈtrænsfər pʌmp]</td><td>Bơm chuyển nhiên liệu</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Fulcrum', this)">🔊</button></td><td>Fulcrum</td><td>n</td><td>['fʌlkrəm]</td><td>Điểm tựa</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Generator', this)">🔊</button></td><td>Generator</td><td>n</td><td>[ˈʤɛnəˌreɪtər]</td><td>Máy phát điện</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Graphite', this)">🔊</button></td><td>Graphite</td><td>n</td><td>['græfait]</td><td>Than chì</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Groove', this)">🔊</button></td><td>Groove</td><td>n</td><td>[gru:v]</td><td>Rãnh</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Hazard', this)">🔊</button></td><td>Hazard</td><td>n</td><td>['hæzəd]</td><td>Nguy hiểm, rủi ro</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('High pressure', this)">🔊</button></td><td>High pressure</td><td>n</td><td>[haɪ ˈprɛʃər]</td><td>Áp suất cao</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('High voltage', this)">🔊</button></td><td>High-voltage</td><td>n</td><td>[haɪ-ˈvoʊltəʤ]</td><td>Điện cao áp</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Humidity', this)">🔊</button></td><td>Humidity</td><td>n</td><td>[hjuˈmɪdəti]</td><td>Độ ẩm</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Ignition plug', this)">🔊</button></td><td>Ignition plug</td><td>n</td><td>[ɪgˈnɪʃən plʌg]</td><td>Bugi</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Impeller', this)">🔊</button></td><td>Impeller</td><td>n</td><td>[ɪmˈpɛlər]</td><td>Cánh bơm (bơm ly tâm)</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Indirect injection engines', this)">🔊</button></td><td>Indirect injection engines</td><td>n</td><td>[ɪndəˈrɛkt ɪnˈʤɛkʃən ˈɛnʤənz]</td><td>Động cơ phun nhiên liệu không trực tiếp</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Inhalation', this)">🔊</button></td><td>Inhalation</td><td>n</td><td>[ɪnhəˈleɪʃən]</td><td>Sự hít vào</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Injector nozzle', this)">🔊</button></td><td>Injector nozzle</td><td>n</td><td>[ɪnˈʤɛktər ˈnɑzəl]</td><td>Miệng vòi phun</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Intake manifold', this)">🔊</button></td><td>Intake manifold</td><td>n</td><td>[ˈɪnˌteɪk ˈmænəˌfoʊld]</td><td>Cổ góp nạp</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Intake valve', this)">🔊</button></td><td>Intake valve</td><td>n</td><td>['inteik vælv]</td><td>Xupap nạp</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Knuckle', this)">🔊</button></td><td>Knuckle</td><td>n</td><td>['nʌkl]</td><td>Khớp nối</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Lambda sensor', this)">🔊</button></td><td>Lambda sensor</td><td>n</td><td>[ˈlæmdə ˈsɛnsər]</td><td>Cảm biến lambda</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Leaf', this)">🔊</button></td><td>Leaf</td><td>n</td><td>[li:f]</td><td>Lá nhíp</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Lifter', this)">🔊</button></td><td>Lifter</td><td>n</td><td>[ˈlɪftər]</td><td>Con đội</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Linkage', this)">🔊</button></td><td>Linkage</td><td>n</td><td>['lɪŋkɪdʒ]</td><td>Sự liên kết</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Lubricate', this)">🔊</button></td><td>Lubricate</td><td>n</td><td>[ˈlubrɪˌkeɪt]</td><td>Bôi trơn</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Magnetic switch', this)">🔊</button></td><td>Magnetic switch</td><td>n</td><td>[mægˈnɛtɪk swɪʧ]</td><td>Công tắc từ</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Mechanical pump', this)">🔊</button></td><td>Mechanical pump</td><td>n</td><td>[məˈkænɪkəl pʌmp]</td><td>Bơm cơ khí</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Negative plate', this)">🔊</button></td><td>Negative plate</td><td>n</td><td>[ˈnɛgətɪv pleɪt]</td><td>Bản cực âm</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Oil filter', this)">🔊</button></td><td>Oil filter</td><td>n</td><td>[ɔɪl ˈfɪltər]</td><td>Bầu lọc dầu</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Piezoelectric injector', this)">🔊</button></td><td>Piezoelectric injector</td><td>n</td><td>[paɪəzoʊɪˈlɛktrɪk]</td><td>Kim phun áp điện</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Pinion', this)">🔊</button></td><td>Pinion</td><td>n</td><td>['pɪnjən]</td><td>Bánh răng nhỏ</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Piston', this)">🔊</button></td><td>Piston</td><td>n</td><td>[ˈpɪstən]</td><td>Pít tông</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Pitch', this)">🔊</button></td><td>Pitch</td><td>n</td><td>[pɪʧ]</td><td>Bước răng</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Pivot', this)">🔊</button></td><td>Pivot</td><td>n</td><td>['pɪvət]</td><td>Trụ, chốt</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Positive plate', this)">🔊</button></td><td>Positive plate</td><td>n</td><td>[ˈpɑzətɪv pleɪt]</td><td>Bản cực dương</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Pressure relief valve', this)">🔊</button></td><td>Pressure relief valve</td><td>n</td><td>[ˈprɛʃər rɪˈlif vælv]</td><td>Van giảm áp</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Proportion', this)">🔊</button></td><td>Proportion</td><td>n</td><td>[prəˈpɔrʃən]</td><td>Tỷ lệ</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Rack', this)">🔊</button></td><td>Rack</td><td>n</td><td>[ræk]</td><td>Thanh răng</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Rail', this)">🔊</button></td><td>Rail</td><td>n</td><td>[reɪl]</td><td>Đường ray</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Ring', this)">🔊</button></td><td>Ring</td><td>n</td><td>[rɪŋ]</td><td>Vòng</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Rivet', this)">🔊</button></td><td>Rivet</td><td>n</td><td>['rɪvɪt]</td><td>Đinh tán</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Rod', this)">🔊</button></td><td>Rod</td><td>n</td><td>[rɔd]</td><td>Thanh</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Roller', this)">🔊</button></td><td>Roller</td><td>n</td><td>['roʊlə]</td><td>Con lăn</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Seal', this)">🔊</button></td><td>Seal</td><td>n</td><td>[si:l]</td><td>Làm kín</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Separate', this)">🔊</button></td><td>Separate</td><td>n</td><td>[ˈsɛprət]</td><td>Riêng rẽ</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Shift', this)">🔊</button></td><td>Shift</td><td>v</td><td>[ʃɪft]</td><td>Sang số</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Shock', this)">🔊</button></td><td>Shock</td><td>n</td><td>[ʃɑk]</td><td>Sự va chạm</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Shock absorber', this)">🔊</button></td><td>Shock absorber</td><td>n</td><td>[ʃɑk əbˈzɔrbər]</td><td>Bộ giảm chấn</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Spark ignition engine', this)">🔊</button></td><td>Spark ignition engine</td><td>n</td><td>[spɑrk ɪgˈnɪʃən]</td><td>Động cơ đánh lửa</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Spindle', this)">🔊</button></td><td>Spindle</td><td>n</td><td>['spɪndl]</td><td>Trục</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Spring', this)">🔊</button></td><td>Spring</td><td>n</td><td>[sprɪŋ]</td><td>Lò xo</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Squeeze', this)">🔊</button></td><td>Squeeze</td><td>n</td><td>[skwi:z]</td><td>Sự ép</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Strut', this)">🔊</button></td><td>Strut</td><td>n</td><td>[strʌt]</td><td>Thanh chống</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Submerge', this)">🔊</button></td><td>Submerge</td><td>v</td><td>[səbˈmɜrʤ]</td><td>Làm ngập</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Suspension system', this)">🔊</button></td><td>Suspension system</td><td>n</td><td>[səˈspɛnʃən ˈsɪstəm]</td><td>Hệ thống treo</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Synchronizer', this)">🔊</button></td><td>Synchronizer</td><td>n</td><td>['sɪŋkrənaɪzə]</td><td>Đồng tốc</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Synthetic', this)">🔊</button></td><td>Synthetic</td><td>n</td><td>[sɪnˈθɛtɪk]</td><td>Chất tổng hợp</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Throttle valve', this)">🔊</button></td><td>Throttle valve</td><td>n</td><td>[ˈθrɑtəl vælv]</td><td>Bướm ga</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Transmission', this)">🔊</button></td><td>Transmission</td><td>n</td><td>[trænˈsmɪʃən]</td><td>Hộp số</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Uniformly', this)">🔊</button></td><td>Uniformly</td><td>adv</td><td>[ˈjunəˌfɔrmli]</td><td>Đồng đều</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Vacuum', this)">🔊</button></td><td>Vacuum</td><td>n</td><td>[ˈvækjum]</td><td>Chân không</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Valve seat', this)">🔊</button></td><td>Valve seat</td><td>n</td><td>[vælv si:t]</td><td>Đế xupap</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Valve spring', this)">🔊</button></td><td>Valve spring</td><td>n</td><td>[vælv sprɪŋ]</td><td>Lò xo xupap</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Vaporization', this)">🔊</button></td><td>Vaporization</td><td>n</td><td>[veɪpərəˈzeɪʃən]</td><td>Sự bay hơi</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Ventilate', this)">🔊</button></td><td>Ventilate</td><td>v</td><td>['vɛntɪleɪt]</td><td>Thông gió</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Volatile', this)">🔊</button></td><td>Volatile</td><td>adj</td><td>[ˈvɑlətəl]</td><td>Bay hơi</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Voltage regulator', this)">🔊</button></td><td>Voltage regulator</td><td>n</td><td>[ˈvoʊltəʤ ˈrɛgjəˌleɪtər]</td><td>Bộ điều chỉnh điện áp</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Wear', this)">🔊</button></td><td>Wear</td><td>n</td><td>[wɛr]</td><td>Sự mài mòn</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Wet sump', this)">🔊</button></td><td>Wet sump</td><td>n</td><td>[wɛt sʌmp]</td><td>Các-te ướt</td></tr>
+
+<tr><td><button class="mg-speaker-btn" onclick="speakWord('Worm', this)">🔊</button></td><td>Worm</td><td>n</td><td>[wɜrm]</td><td>Đường ren</td></tr>
+
+</tbody>
+</table>
+
+<script>
+function speakWord(text, el) {
+  window.speechSynthesis.cancel();
+
+  document.querySelectorAll('.mg-speaker-btn')
+    .forEach(b => b.classList.remove('mg-speaking'));
+
+  if (el) el.classList.add('mg-speaking');
+
+  const msg = new SpeechSynthesisUtterance(text);
+  msg.lang = "en-US";
+  msg.rate = 0.85;
+
+  msg.onend = () => {
+    if (el) el.classList.remove('mg-speaking');
+  };
+
+  window.speechSynthesis.speak(msg);
+}
+</script>
+
+</body>
+</html>
