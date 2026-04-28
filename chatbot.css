@@ -31,7 +31,7 @@
         /* --- NÚT MỞ CHAT (FLOATING ACTION BUTTON) --- */
         #mg-chat-toggle {
             position: fixed;
-            bottom: 1.5rem;
+            bottom: 4.5rem;
             right: 1.5rem;
             width: 56px;
             height: 56px;
