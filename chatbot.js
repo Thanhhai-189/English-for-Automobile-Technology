@@ -456,6 +456,720 @@ const chatData = {
         vi: "Một ống chứa nhiên liệu áp suất cao dùng chung cho tất cả các kim phun."
     }
 },
+//unit5
+{
+    prompts: ["chemical reaction", "phan ung hoa hoc"],
+    data: {
+        term: "Chemical reaction",
+        ipa: "/ˈkem.ɪ.kəl riˈæk.ʃən/",
+        img: "vocabulary/unit5/chemical_reaction.jpg",
+        en: "A process that involves rearrangement of molecular structure.",
+        vi: "Quá trình thay đổi cấu trúc phân tử của các chất."
+    }
+},
+{
+    prompts: ["electrochemical reaction", "phan ung dien hoa"],
+    data: {
+        term: "Electrochemical reaction",
+        ipa: "/iˌlek.trəʊˈkem.ɪ.kəl riˈæk.ʃən/",
+        img: "vocabulary/unit5/electrochemical_reaction.jpg",
+        en: "A reaction that occurs between an electrolyte and an electrode.",
+        vi: "Phản ứng xảy ra giữa chất điện phân và điện cực."
+    }
+},
+{
+    prompts: ["electrode", "dien cuc"],
+    data: {
+        term: "Electrode",
+        ipa: "/iˈlek.trəʊd/",
+        img: "vocabulary/unit5/electrode.jpg",
+        en: "A conductor through which electricity enters or leaves a system.",
+        vi: "Một vật dẫn điện giúp dòng điện đi vào hoặc đi ra khỏi hệ thống."
+    }
+},
+{
+    prompts: ["negative plate", "ban cuc am"],
+    data: {
+        term: "Negative plate",
+        ipa: "/ˈneɡ.ə.tɪv pleɪt/",
+        img: "vocabulary/unit5/negative_plate.jpg",
+        en: "The electrode in a battery with an excess of electrons.",
+        vi: "Bản điện cực trong ắc quy có dư thừa electron."
+    }
+},
+{
+    prompts: ["positive plate", "ban cuc duong"],
+    data: {
+        term: "Positive plate",
+        ipa: "/ˈpɒz.ə.tɪv pleɪt/",
+        img: "vocabulary/unit5/positive_plate.jpg",
+        en: "The electrode in a battery that receives electrons.",
+        vi: "Bản điện cực trong ắc quy tiếp nhận các electron."
+    }
+},
+{
+    prompts: ["high voltage", "dien ap cao"],
+    data: {
+        term: "High-voltage",
+        ipa: "/ˌhaɪˈvəʊl.tɪdʒ/",
+        img: "vocabulary/unit5/high_voltage.jpg",
+        en: "Electrical potential large enough to cause injury or damage.",
+        vi: "Mức điện thế đủ lớn để có thể gây thương tích hoặc hư hỏng."
+    }
+},
+{
+    prompts: ["electrical spark", "tia lua dien"],
+    data: {
+        term: "Electrical spark",
+        ipa: "/iˈlek.trɪ.kəl spɑːk/",
+        img: "vocabulary/unit5/electrical_spark.jpg",
+        en: "A luminous discharge of electricity across a gap.",
+        vi: "Sự phóng điện phát sáng qua một khe hở giữa hai điện cực."
+    }
+},
+{
+    prompts: ["voltage regulator", "bo dieu ap"],
+    data: {
+        term: "Voltage regulator",
+        ipa: "/ˈvəʊl.tɪdʒ ˈreɡ.jə.leɪ.tər/",
+        img: "vocabulary/unit5/voltage_regulator.jpg",
+        en: "A device that maintains a constant voltage level.",
+        vi: "Thiết bị dùng để duy trì mức điện áp ổn định."
+    }
+},
+{
+    prompts: ["vaporization", "su bay hoi"],
+    data: {
+        term: "Vaporization",
+        ipa: "/ˌveɪ.pər.aɪˈzeɪ.ʃən/",
+        img: "vocabulary/unit5/vaporization.jpg",
+        en: "The phase transition of a substance from liquid to vapor.",
+        vi: "Sự chuyển pha của một chất từ thể lỏng sang thể hơi."
+    }
+},
+{
+    prompts: ["humidity", "do am"],
+    data: {
+        term: "Humidity",
+        ipa: "/hjuːˈmɪd.ə.ti/",
+        img: "vocabulary/unit5/humidity.jpg",
+        en: "The amount of water vapor in the air.",
+        vi: "Lượng hơi nước có trong không khí."
+    }
+},
+{
+    prompts: ["magnetic switch", "cong tac tu"],
+    data: {
+        term: "Magnetic switch",
+        ipa: "/mæɡˈnet.ɪk swɪtʃ/",
+        img: "vocabulary/unit5/magnetic_switch.jpg",
+        en: "A switch that opens or closes using a magnetic field.",
+        vi: "Loại công tắc đóng hoặc ngắt bằng cách sử dụng từ trường."
+    }
+},
+{
+    prompts: ["commutator", "co gop"],
+    data: {
+        term: "Commutator",
+        ipa: "/ˈkɒm.jə.teɪ.tər/",
+        img: "vocabulary/unit5/commutator.jpg",
+        en: "A device for reversing the direction of electric current in a motor.",
+        vi: "Thiết bị dùng để đảo chiều dòng điện trong động cơ điện."
+    }
+},
+{
+    prompts: ["armature", "phan ung"],
+    data: {
+        term: "Armature",
+        ipa: "/ˈɑː.mə.tʃər/",
+        img: "vocabulary/unit5/armature.jpg",
+        en: "The rotating part of an electric motor or generator.",
+        vi: "Phần quay của động cơ điện hoặc máy phát điện."
+    }
+},
+{
+    prompts: ["field coil", "cuon kich tu"],
+    data: {
+        term: "Field coil",
+        ipa: "/fiːld kɔɪl/",
+        img: "vocabulary/unit5/field_coil.jpg",
+        en: "An electromagnet used to generate a magnetic field in a machine.",
+        vi: "Nam châm điện dùng để tạo ra từ trường trong máy điện."
+    }
+},
+{
+    prompts: ["generator", "may phat dien"],
+    data: {
+        term: "Generator",
+        ipa: "/ˈdʒen.ər.eɪ.tər/",
+        img: "vocabulary/unit5/generator.jpg",
+        en: "A machine that converts mechanical energy into electricity.",
+        vi: "Máy dùng để chuyển đổi năng lượng cơ năng thành điện năng."
+    }
+},
+
+{
+    prompts: ["battery", "ac quy"],
+    data: {
+        term: "Battery",
+        ipa: "/ˈbætəri/",
+        img: "vocabulary/unit5/battery.jpg",
+        en: "The primary source of electrical power in all automobiles.",
+        vi: "Nguồn cung cấp điện năng chính trên tất cả các loại ô tô."
+    }
+},
+{
+    prompts: ["ignition system", "he thong danh lua"],
+    data: {
+        term: "Ignition system",
+        ipa: "/ɪɡˈnɪʃən ˈsɪstəm/",
+        img: "vocabulary/unit5/ignition_system.jpg",
+        en: "System designed to supply properly timed high-voltage sparks to the engine.",
+        vi: "Hệ thống cung cấp tia lửa điện cao áp đúng thời điểm cho động cơ."
+    }
+},
+{
+    prompts: ["starting system", "he thong khoi dong"],
+    data: {
+        term: "Starting system",
+        ipa: "/ˈstɑːrtɪŋ ˈsɪstəm/",
+        img: "vocabulary/unit5/starting_system.jpg",
+        en: "System designed to crank the engine until it can operate under its own power.",
+        vi: "Hệ thống dùng để quay trục khuỷu cho đến khi động cơ tự chạy được."
+    }
+},
+{
+    prompts: ["charging system", "he thong nap"],
+    data: {
+        term: "Charging system",
+        ipa: "/ˈtʃɑːrdʒɪŋ ˈsɪstəm/",
+        img: "vocabulary/unit5/charging_system.jpg",
+        en: "Responsible for producing energy to meet electrical loads and recharging the battery.",
+        vi: "Hệ thống sản sinh năng lượng cho các phụ tải và nạp lại điện cho ắc-quy."
+    }
+},
+{
+    prompts: ["lighting system", "he thong chieu sang"],
+    data: {
+        term: "Lighting system",
+        ipa: "/ˈlaɪtɪŋ ˈsɪstəm/",
+        img: "vocabulary/unit5/lighting_system.jpg",
+        en: "Provides power to both exterior and interior lights of the vehicle.",
+        vi: "Hệ thống cung cấp điện cho toàn bộ đèn chiếu sáng trong và ngoài xe."
+    }
+},
+{
+    prompts: ["lead acid battery", "ac quy chi axit"],
+    data: {
+        term: "Lead-acid battery",
+        ipa: "/led-ˈæsɪd ˈbætəri/",
+        img: "vocabulary/unit5/lead_acid_battery.jpg",
+        en: "The standard power source for conventional vehicles using lead plates and acid.",
+        vi: "Nguồn điện tiêu chuẩn cho xe truyền thống sử dụng bản cực chì và axit."
+    }
+},
+{
+    prompts: ["electrochemical cell", "ngan ac quy"],
+    data: {
+        term: "Electrochemical cell",
+        ipa: "/ɪˌlɛktroʊˈkɛmɪkəl sɛl/",
+        img: "vocabulary/unit5/electrochemical_cell.jpg",
+        en: "A unit consisting of electrodes and electrolyte to produce electricity.",
+        vi: "Đơn vị gồm các điện cực và dung dịch điện phân để tạo ra điện."
+    }
+},
+{
+    prompts: ["electrolyte", "dung dich dien phan"],
+    data: {
+        term: "Electrolyte",
+        ipa: "/ɪˈlɛktrəˌlaɪt/",
+        img: "vocabulary/unit5/electrolyte.jpg",
+        en: "The liquid (acid mixture) inside a battery that surrounds the electrodes.",
+        vi: "Chất lỏng (hỗn hợp axit) bên trong ắc-quy bao quanh các điện cực."
+    }
+},
+{
+    prompts: ["electrode", "dien cuc"],
+    data: {
+        term: "Electrode",
+        ipa: "/ɪˈlɛktroʊd/",
+        img: "vocabulary/unit5/electrode.jpg",
+        en: "Conductive plates (positive and negative) inside the battery cells.",
+        vi: "Các tấm dẫn điện (dương và âm) bên trong các ngăn ắc-quy."
+    }
+},
+{
+    prompts: ["positive plate", "ban cuc duong"],
+    data: {
+        term: "Positive plate",
+        ipa: "/ˈpɑːzətɪv pleɪt/",
+        img: "vocabulary/unit5/positive_plate.jpg",
+        en: "The battery plate characterized by a lack of electrons.",
+        vi: "Tấm cực trong ắc-quy có tình trạng thiếu hụt điện tử."
+    }
+},
+{
+    prompts: ["negative plate", "ban cuc am"],
+    data: {
+        term: "Negative plate",
+        ipa: "/ˈnɛɡətɪv pleɪt/",
+        img: "vocabulary/unit5/negative_plate.jpg",
+        en: "The battery plate characterized by an abundance of electrons.",
+        vi: "Tấm cực trong ắc-quy có tình trạng dư thừa điện tử."
+    }
+},
+{
+    prompts: ["terminal", "coc binh"],
+    data: {
+        term: "Terminal",
+        ipa: "/ˈtɜːrmɪnl/",
+        img: "vocabulary/unit5/terminal.jpg",
+        en: "External connection points (positive and negative) on the battery.",
+        vi: "Các điểm kết nối bên ngoài (dương và âm) trên bình ắc-quy."
+    }
+},
+{
+    prompts: ["spark plug", "bugi"],
+    data: {
+        term: "Spark plug",
+        ipa: "/spɑːrk plʌɡ/",
+        img: "vocabulary/unit5/spark_plug.jpg",
+        en: "Device that produces an electrical spark to ignite the air-fuel mixture.",
+        vi: "Thiết bị tạo ra tia lửa điện để đốt cháy hỗn hợp hòa khí."
+    }
+},
+{
+    prompts: ["distributor ignition", "danh lua co bo chia"],
+    data: {
+        term: "Distributor ignition",
+        ipa: "/dɪˈstrɪbjətər ɪɡˈnɪʃən/",
+        img: "vocabulary/unit5/distributor_ignition.jpg",
+        en: "Ignition system using a mechanical distributor to time spark delivery.",
+        vi: "Hệ thống dùng bộ chia điện cơ khí để phân phối tia lửa đúng kỳ."
+    }
+},
+{
+    prompts: ["electronic ignition", "danh lua dien tu"],
+    data: {
+        term: "Electronic ignition",
+        ipa: "/ɪˌlɛkˈtrɑːnɪk ɪɡˈnɪʃən/",
+        img: "vocabulary/unit5/electronic_ignition.jpg",
+        en: "Ignition system using semiconductors instead of mechanical breakers.",
+        vi: "Hệ thống dùng linh kiện bán dẫn thay cho bộ ngắt điện cơ khí."
+    }
+},
+{
+    prompts: ["dis", "he thong danh lua dis"],
+    data: {
+        term: "DIS",
+        ipa: "/di-aɪ-ɛs/",
+        img: "vocabulary/unit5/dis.jpg",
+        en: "Distributor-less Ignition System; switches high voltage electronically.",
+        vi: "Hệ thống đánh lửa không sử dụng bộ chia điện cơ khí."
+    }
+},
+{
+    prompts: ["starter motor", "may khoi dong"],
+    data: {
+        term: "Starter motor",
+        ipa: "/ˈstɑːrtər ˈmoʊtər/",
+        img: "vocabulary/unit5/starter_motor.jpg",
+        en: "Electric motor that produces high torque to spin the engine's flywheel.",
+        vi: "Động cơ điện tạo mô-men lớn để quay bánh đà khởi động xe."
+    }
+},
+{
+    prompts: ["solenoid", "chuot de"],
+    data: {
+        term: "Solenoid",
+        ipa: "/ˈsoʊlənɔɪd/",
+        img: "vocabulary/unit5/solenoid.jpg",
+        en: "An electromagnetic switch that controls the high current to the starter.",
+        vi: "Công tắc điện từ điều khiển dòng điện lớn vào máy khởi động."
+    }
+},
+{
+    prompts: ["ignition switch", "cong tac danh lua"],
+    data: {
+        term: "Ignition switch",
+        ipa: "/ɪɡˈnɪʃən swɪtʃ/",
+        img: "vocabulary/unit5/ignition_switch.jpg",
+        en: "Driver-operated switch, usually on the steering column, to start the vehicle.",
+        vi: "Công tắc (thường ở cổ lái) để tài xế kích hoạt hệ thống khởi động."
+    }
+},
+{
+    prompts: ["battery cables", "cap ac quy"],
+    data: {
+        term: "Battery cables",
+        ipa: "/ˈbætəri ˈkeɪblz/",
+        img: "vocabulary/unit5/battery_cables.jpg",
+        en: "Large diameter wires connecting the battery to the starter and ground.",
+        vi: "Các dây dẫn lớn nối ắc-quy với máy khởi động và thân xe."
+    }
+},
+{
+    prompts: ["relay", "ro le"],
+    data: {
+        term: "Relay",
+        ipa: "/ˈriːleɪ/",
+        img: "vocabulary/unit5/relay.jpg",
+        en: "An electrically operated magnetic switch used to control other circuits.",
+        vi: "Công tắc điện từ dùng để đóng ngắt các mạch điện phụ tải."
+    }
+},
+{
+    prompts: ["magnetic field", "tu truong"],
+    data: {
+        term: "Magnetic field",
+        ipa: "/mæɡˈnɛtɪzəm fiːld/",
+        img: "vocabulary/unit5/magnetic_field.jpg",
+        en: "The area of force around a conductor used in motors and generators.",
+        vi: "Vùng lực quanh dây dẫn được dùng trong động cơ và máy phát."
+    }
+},
+{
+    prompts: ["armature", "phan ung"],
+    data: {
+        term: "Armature",
+        ipa: "/ˈɑːrmətʃər/",
+        img: "vocabulary/unit5/armature.jpg",
+        en: "The rotating component of a motor or generator.",
+        vi: "Bộ phận quay chính trong động cơ điện hoặc máy phát điện."
+    }
+},
+{
+    prompts: ["field coil", "cuon kich tu"],
+    data: {
+        term: "Field coil",
+        ipa: "/fiːld kɔɪl/",
+        img: "vocabulary/unit5/field_coil.jpg",
+        en: "Windings used to create a magnetic field in electrical machines.",
+        vi: "Các cuộn dây dùng để tạo ra từ trường trong máy điện."
+    }
+},
+{
+    prompts: ["commutator", "co gop"],
+    data: {
+        term: "Commutator",
+        ipa: "/ˈkɑːmjuːˌteɪtər/",
+        img: "vocabulary/unit5/commutator.jpg",
+        en: "Segmented part of an armature that maintains electrical contact with brushes.",
+        vi: "Bộ phận gồm các phiến đồng trên phần ứng tiếp xúc với chổi than."
+    }
+},
+{
+    prompts: ["brushes", "choi than"],
+    data: {
+        term: "Brushes",
+        ipa: "/ˈbrʌʃɪz/",
+        img: "vocabulary/unit5/brushes.jpg",
+        en: "Carbon blocks that carry current to or from the commutator.",
+        vi: "Khối carbon dẫn dòng điện vào hoặc ra khỏi cổ góp quay."
+    }
+},
+{
+    prompts: ["series motor", "dong co noi tiep"],
+    data: {
+        term: "Series motor",
+        ipa: "/ˈsɪriːz ˈmoʊtər/",
+        img: "vocabulary/unit5/series_motor.jpg",
+        en: "Motor where armature is wired in series with the field coils.",
+        vi: "Động cơ có cuộn phần ứng và cuộn kích từ mắc nối tiếp."
+    }
+},
+{
+    prompts: ["shunt motor", "dong co song song"],
+    data: {
+        term: "Shunt motor",
+        ipa: "/ʃʌnt ˈmoʊtər/",
+        img: "vocabulary/unit5/shunt_motor.jpg",
+        en: "Motor where field coils are wired parallel to the armature.",
+        vi: "Động cơ có cuộn dây kích từ mắc song song với phần ứng."
+    }
+},
+{
+    prompts: ["compound motor", "dong co hon hop"],
+    data: {
+        term: "Compound motor",
+        ipa: "/ˈkɑːmˌpaʊnd ˈmoʊtər/",
+        img: "vocabulary/unit5/compound_motor.jpg",
+        en: "A motor using a combination of series and shunt wiring.",
+        vi: "Loại động cơ kết hợp cả cách mắc nối tiếp và song song."
+    }
+},
+{
+    prompts: ["ac generator", "may phat dien xoay chieu"],
+    data: {
+        term: "AC generator",
+        ipa: "/ˌeɪ ˈsiː ˈʤɛnəˌreɪtər/",
+        img: "vocabulary/unit5/ac_generator.jpg",
+        en: "Also called an alternator; produces alternating current.",
+        vi: "Thiết bị tạo ra dòng điện xoay chiều."
+    }
+},
+{
+    prompts: ["dc generator", "may phat dien mot chieu"],
+    data: {
+        term: "DC generator",
+        ipa: "/ˌdiː ˈsiː ˈʤɛnəˌreɪtər/",
+        img: "vocabulary/unit5/dc_generator.jpg",
+        en: "Older type of generator producing direct current using brushes and commutator.",
+        vi: "Loại máy phát đời cũ tạo ra dòng điện một chiều trực tiếp."
+    }
+},
+{
+    prompts: ["induction", "hien tuong cam ung"],
+    data: {
+        term: "Induction",
+        ipa: "/ɪnˈdʌkʃən/",
+        img: "vocabulary/unit5/induction.jpg",
+        en: "The process of creating voltage in a wire moving through a magnetic field.",
+        vi: "Quá trình tạo ra điện áp khi dây dẫn cắt qua các đường sức từ."
+    }
+},
+{
+    prompts: ["alternating current", "dong dien xoay chieu"],
+    data: {
+        term: "Alternating Current",
+        ipa: "/ˈɔːltərˌneɪtɪŋ ˈkɜːrənt/",
+        img: "vocabulary/unit5/alternating_current.jpg",
+        en: "Electrical current that reverses direction periodically.",
+        vi: "Dòng điện có chiều biến thiên liên tục theo chu kỳ."
+    }
+},
+{
+    prompts: ["direct current", "dong dien mot chieu"],
+    data: {
+        term: "Direct Current",
+        ipa: "/dɪˈrɛkt ˈkɜːrənt/",
+        img: "vocabulary/unit5/direct_current.jpg",
+        en: "Electrical current that flows in one constant direction.",
+        vi: "Dòng điện chỉ chảy theo một chiều cố định."
+    }
+},
+{
+    prompts: ["rotor", "ro to"],
+    data: {
+        term: "Rotor",
+        ipa: "/ˈroʊtər/",
+        img: "vocabulary/unit5/rotor.jpg",
+        en: "The spinning magnetic field inside an AC generator.",
+        vi: "Bộ phận quay tạo ra từ trường trong máy phát điện xoay chiều."
+    }
+},
+{
+    prompts: ["stator", "sa to"],
+    data: {
+        term: "Stator",
+        ipa: "/ˈsteɪtər/",
+        img: "vocabulary/unit5/stator.jpg",
+        en: "The assembly of stationary conductors in an AC generator.",
+        vi: "Bộ phận đứng yên chứa các cuộn dây dẫn trong máy phát điện."
+    }
+},
+{
+    prompts: ["diode", "di ot"],
+    data: {
+        term: "Diode",
+        ipa: "/ˈdaɪoʊd/",
+        img: "vocabulary/unit5/diode.jpg",
+        en: "Electronic device that allows current to flow in only one direction.",
+        vi: "Linh kiện điện tử chỉ cho phép dòng điện đi qua theo một chiều."
+    }
+},
+{
+    prompts: ["rectifier", "bo chinh luu"],
+    data: {
+        term: "Rectifier",
+        ipa: "/ˈrɛktɪˌfaɪər/",
+        img: "vocabulary/unit5/rectifier.jpg",
+        en: "Component using diodes that changes AC into DC.",
+        vi: "Bộ phận dùng đi-ốt để biến đổi điện xoay chiều thành điện một chiều."
+    }
+},
+
+{
+    prompts: ["field current", "dong dien kich tu"],
+    data: {
+        term: "Field current",
+        ipa: "/fiːld ˈkɜːrənt/",
+        img: "vocabulary/unit5/field_current.jpg",
+        en: "Current flowing through the rotor to vary magnetic field strength.",
+        vi: "Dòng điện chạy qua rô-to để thay đổi cường độ từ trường."
+    }
+},
+{
+    prompts: ["sensing voltage", "dien ap phan hoi"],
+    data: {
+        term: "Sensing voltage",
+        ipa: "/ˈsɛnsɪŋ ˈvoʊltɪʤ/",
+        img: "vocabulary/unit5/sensing_voltage.jpg",
+        en: "Signal used by the regulator to monitor system voltage.",
+        vi: "Tín hiệu điện áp để bộ tiết chế theo dõi tình trạng hệ thống."
+    }
+},
+{
+    prompts: ["headlights", "den pha"],
+    data: {
+        term: "Headlights",
+        ipa: "/ˈhɛdˌlaɪts/",
+        img: "vocabulary/unit5/headlights.jpg",
+        en: "Front lamps for lighting the road ahead during darkness.",
+        vi: "Đèn chiếu sáng phía trước xe khi đi trong đêm tối."
+    }
+},
+{
+    prompts: ["taillights", "den hau"],
+    data: {
+        term: "Taillights",
+        ipa: "/ˈteɪˌlaɪts/",
+        img: "vocabulary/unit5/taillights.jpg",
+        en: "Red lamps at the rear to indicate vehicle presence and width.",
+        vi: "Các đèn màu đỏ phía sau xe dùng để báo hiệu sự hiện diện."
+    }
+},
+{
+    prompts: ["turn signal lamp", "den xi nhan"],
+    data: {
+        term: "Turn signal lamp",
+        ipa: "/tɜːrn ˈsɪɡnəl læmp/",
+        img: "vocabulary/unit5/turn_signal_lamp.jpg",
+        en: "Flashing lamp to indicate the direction the driver intends to turn.",
+        vi: "Đèn nhấp nháy báo hiệu hướng xe chuẩn bị rẽ."
+    }
+},
+{
+    prompts: ["hazard warning", "den canh bao nguy hiem"],
+    data: {
+        term: "Hazard warning",
+        ipa: "/ˈhæzərd ˈwɔːrnɪŋ/",
+        img: "vocabulary/unit5/hazard_warning.jpg",
+        en: "System that flashes all turn signals for emergency signaling.",
+        vi: "Hệ thống nháy tất cả các đèn báo rẽ khi xe gặp sự cố."
+    }
+},
+{
+    prompts: ["stoplights", "den phanh"],
+    data: {
+        term: "Stoplights",
+        ipa: "/ˈstɑːpˌlaɪts/",
+        img: "vocabulary/unit5/stoplights.jpg",
+        en: "Rear lamps that illuminate when the driver applies the brakes.",
+        vi: "Đèn đỏ phía sau sáng lên khi tài xế đạp bàn đạp phanh."
+    }
+},
+{
+    prompts: ["back up lights", "den lui"],
+    data: {
+        term: "Back-up lights",
+        ipa: "/ˈbækʌp laɪts/",
+        img: "vocabulary/unit5/back_up_lights.jpg",
+        en: "White rear lamps that light up when the vehicle is in reverse.",
+        vi: "Đèn trắng phía sau sáng khi xe được cài số lùi."
+    }
+},
+{
+    prompts: ["fuse", "cau chi"],
+    data: {
+        term: "Fuse",
+        ipa: "/fjuːz/",
+        img: "vocabulary/unit5/fuse.jpg",
+        en: "Safety device that opens the circuit if current is too high.",
+        vi: "Thiết bị bảo vệ mạch điện bằng cách tự ngắt khi quá dòng."
+    }
+},
+{
+    prompts: ["circuit breaker", "bo ngat mach"],
+    data: {
+        term: "Circuit breaker",
+        ipa: "/ˈsɜːrkɪt ˈbreɪkər/",
+        img: "vocabulary/unit5/circuit_breaker.jpg",
+        en: "Protective device that interrupts current but can be reset.",
+        vi: "Thiết bị bảo vệ có thể đặt lại sau khi bị ngắt."
+    }
+},
+{
+    prompts: ["ground", "noi dat"],
+    data: {
+        term: "Ground",
+        ipa: "/ɡraʊnd/",
+        img: "vocabulary/unit5/ground.jpg",
+        en: "The return path for electrical current, usually the vehicle chassis.",
+        vi: "Đường hồi của dòng điện thông qua khung gầm hoặc thân xe."
+    }
+},
+{
+    prompts: ["distributor", "bo chia dien"],
+    data: {
+        term: "Distributor",
+        ipa: "/dɪˈstrɪbjətər/",
+        img: "vocabulary/unit5/distributor.jpg",
+        en: "A device that distributes high voltage current to each spark plug in the correct firing order.",
+        vi: "Thiết bị phân phối dòng điện cao áp đến các bugi theo đúng thứ tự đánh lửa."
+    }
+},
+{
+    prompts: ["high tension wire", "day cao ap"],
+    data: {
+        term: "High tension wire",
+        ipa: "/haɪ ˈtenʃən waɪər/",
+        img: "vocabulary/unit5/high_tension_wire.jpg",
+        en: "A cable that carries high voltage from the ignition coil to the spark plugs.",
+        vi: "Dây dẫn truyền điện áp cao từ bô-bin đánh lửa đến bugi."
+    }
+},
+{
+    prompts: ["ignition coil", "bo bin danh lua"],
+    data: {
+        term: "Ignition coil",
+        ipa: "/ɪɡˈnɪʃən kɔɪl/",
+        img: "vocabulary/unit5/ignition_coil.jpg",
+        en: "A transformer that increases battery voltage to create a spark.",
+        vi: "Biến áp dùng để tăng điện áp từ ắc-quy nhằm tạo tia lửa điện."
+    }
+},
+{
+    prompts: ["breaker point", "vit lua"],
+    data: {
+        term: "Breaker point",
+        ipa: "/ˈbreɪkər pɔɪnt/",
+        img: "vocabulary/unit5/breaker_point.jpg",
+        en: "A mechanical switch used in conventional ignition systems.",
+        vi: "Công tắc cơ khí dùng trong hệ thống đánh lửa truyền thống."
+    }
+},
+{
+    prompts: ["condenser", "tu dien danh lua"],
+    data: {
+        term: "Condenser",
+        ipa: "/kənˈdensər/",
+        img: "vocabulary/unit5/condenser.jpg",
+        en: "A capacitor used to reduce arcing at the breaker points.",
+        vi: "Tụ điện dùng để giảm tia lửa điện tại vít lửa."
+    }
+},
+{
+    prompts: ["wiring harness", "bo day dien"],
+    data: {
+        term: "Wiring harness",
+        ipa: "/ˈwaɪərɪŋ ˈhɑːrnəs/",
+        img: "vocabulary/unit5/wiring_harness.jpg",
+        en: "An organized set of wires and connectors in a vehicle electrical system.",
+        vi: "Bộ dây điện và giắc nối được bố trí trong hệ thống điện ô tô."
+    }
+},
+
+{
+    prompts: ["dashboard", "bang tablo"],
+    data: {
+        term: "Dashboard",
+        ipa: "/ˈdæʃbɔːrd/",
+        img: "vocabulary/unit5/dashboard.jpg",
+        en: "The control panel located in front of the driver.",
+        vi: "Bảng điều khiển nằm phía trước người lái."
+    }
+},
 //doc
 {
     prompts: ["automobile", "o to", "xe hoi", "car"],
@@ -470,17 +1184,10 @@ const chatData = {
     data: { term: "Chassis", ipa: "/ˈʃæsi/", img: "vocabulary/unit_doc/chassis.jpg", en: "The structural lower part of a vehicle to which the running gear is attached.", vi: "Khung gầm: Phần kết cấu bên dưới của xe, nơi lắp đặt các hệ thống vận hành như treo, lái và truyền động." }
 },
 {
-    prompts: ["frame", "khung xe"],
-    data: { term: "Frame", ipa: "/freɪm/", img: "vocabulary/unit_doc/frame.jpg", en: "The structural unit that supports the car body and engine.", vi: "Khung xe: Bộ khung chính chịu lực, dùng để nâng đỡ thân xe và các cụm chi tiết." }
-},
-{
     prompts: ["drivetrain", "he thong truyen luc"],
     data: { term: "Drivetrain", ipa: "/ˈdraɪvˌtreɪn/", img: "vocabulary/unit_doc/drivetrain.jpg", en: "Systems that transmit power from the engine to the wheels.", vi: "Hệ thống truyền lực: Tập hợp các bộ phận truyền công suất từ động cơ tới bánh xe." }
 },
-{
-    prompts: ["transmission", "hop so"],
-    data: { term: "Transmission", ipa: "/trænˈsmɪʃən/", img: "vocabulary/unit_doc/transmission.jpg", en: "A device that uses gears to change engine speed and torque.", vi: "Hộp số: Cơ cấu sử dụng bánh răng để thay đổi tốc độ và mô-men xoắn từ động cơ." }
-},
+
 {
     prompts: ["cylinder block", "than may"],
     data: { term: "Cylinder Block", ipa: "/ˈsɪləndər blɑk/", img: "vocabulary/unit_doc/cylinder_block.jpg", en: "The main supporting structure for the engine components.", vi: "Thân máy: Bộ phận chính của động cơ, chứa các xi lanh và hỗ trợ các chi tiết khác." }
@@ -587,7 +1294,7 @@ const chatData = {
     data: { term: "Battery", ipa: "/ˈbætəri/", img: "vocabulary/unit_doc/battery.jpg", en: "A device that converts chemical energy into electrical energy.", vi: "Ắc quy: Thiết bị lưu trữ và cung cấp điện năng cho xe." }
 },
 {
-    prompts: ["alternator", "may phat dien"],
+    prompts: ["alternator", "may phat dien xoay chieu"],
     data: { term: "Alternator", ipa: "/ˈɔltərˌneɪtər/", img: "vocabulary/unit_doc/alternator.jpg", en: "An AC generator that produces electrical energy while running.", vi: "Máy phát điện: Thiết bị tạo ra điện năng khi động cơ hoạt động." }
 },
 {
@@ -760,18 +1467,12 @@ const chatData = {
     prompts: ["relay", "ro le"],
     data: { term: "Relay", ipa: "/ˈriːleɪ/", img: "vocabulary/unit_doc/relay.jpg", en: "An electrically operated switch.", vi: "Rơ-le: Công tắc điện điều khiển bằng dòng điện để đóng/ngắt mạch." }
 },
-{
-    prompts: ["fuse", "cau chi"],
-    data: { term: "Fuse", ipa: "/fjuːz/", img: "vocabulary/unit_doc/fuse.jpg", en: "Protects circuit from overload.", vi: "Cầu chì: Thiết bị bảo vệ mạch điện khỏi quá tải bằng cách tự đứt." }
-},
+
 {
     prompts: ["wiring harness", "day dien"],
     data: { term: "Wiring Harness", ipa: "/ˈwaɪərɪŋ/", img: "vocabulary/unit_doc/wiring_harness.jpg", en: "Organized set of wires.", vi: "Dây điện: Hệ thống dây dẫn điện kết nối các thiết bị trong xe." }
 },
-{
-    prompts: ["headlight", "den pha"],
-    data: { term: "Headlight", ipa: "/ˈhɛdlaɪt/", img: "vocabulary/unit_doc/headlight.jpg", en: "Front illumination light.", vi: "Đèn pha: Đèn chiếu sáng phía trước giúp quan sát khi di chuyển ban đêm." }
-},
+
 {
     prompts: ["taillight", "den hau"],
     data: { term: "Taillight", ipa: "/ˈteɪlˌlaɪt/", img: "vocabulary/unit_doc/taillight.jpg", en: "Rear signal light.", vi: "Đèn hậu: Đèn phía sau dùng để báo hiệu và nhận diện xe." }
@@ -779,10 +1480,6 @@ const chatData = {
 {
     prompts: ["turn signal", "den xi nhan"],
     data: { term: "Turn Signal", ipa: "/tɜrn ˈsɪgnəl/", img: "vocabulary/unit_doc/turn_signal.jpg", en: "Indicates turning direction.", vi: "Đèn xi-nhan: Đèn báo hiệu hướng rẽ của xe." }
-},
-{
-    prompts: ["dashboard", "bang tablo"],
-    data: { term: "Dashboard", ipa: "/ˈdæʃˌbɔrd/", img: "vocabulary/unit_doc/dashboard.jpg", en: "Displays vehicle information.", vi: "Bảng táp-lô: Bảng hiển thị thông tin và điều khiển trong xe." }
 },
 {
     prompts: ["speedometer", "dong ho toc do"],

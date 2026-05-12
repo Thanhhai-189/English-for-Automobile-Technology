@@ -352,10 +352,10 @@
 <link rel="stylesheet" type="text/css" href="tailwind.css" />
 </p>
 <style>
-        /* CSS Reset chuyên biệt cho môi trường eXelearning */
         .mg-body-reset {
             background-color: #f1f5f9 !important;
             color: #0f172a !important;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important;
             margin: 0 !important;
             padding: 10px !important;
         }
@@ -364,11 +364,9 @@
             width: 100% !important;
             max-width: 1200px !important;
             margin: 0 auto !important;
-            position: relative !important;
             display: block !important;
         }
 
-        /* Grid hiển thị các từ vựng */
         .mg-word-grid {
             display: grid !important;
             grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)) !important;
@@ -376,7 +374,6 @@
             margin-top: 2rem !important;
         }
 
-        /* Thẻ từ vựng - Đồng bộ style với item-card */
         .mg-word-card {
             background-color: white !important;
             border: 2px solid #e2e8f0 !important;
@@ -401,8 +398,7 @@
             box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.1) !important;
             color: #2563eb !important;
         }
-
-        /* Nút loa nhỏ trên thẻ */
+/* Nút loa nhỏ trên thẻ */
         .mg-mini-speaker {
             position: absolute !important;
             right: 8px !important;
@@ -418,14 +414,12 @@
             transition: all 0.2s !important;
             border: 1px solid #e2e8f0 !important;
         }
-
         .mg-mini-speaker:hover {
-            background: #3b82f6 !important;
-            color: white !important;
-            border-color: #3b82f6 !important;
-        }
-
-        /* Modal chi tiết */
+                    background: #3b82f6 !important;
+                    color: white !important;
+                    border-color: #3b82f6 !important;
+                }
+           /* Modal chi tiết */
         #mg-word-modal {
             position: fixed !important;
             inset: 0 !important;
@@ -453,7 +447,6 @@
             from { transform: translateY(20px); opacity: 0; }
             to { transform: translateY(0); opacity: 1; }
         }
-
         .mg-close-btn {
             position: absolute !important;
             right: 1.5rem !important;
@@ -463,28 +456,48 @@
             cursor: pointer !important;
         }
 
+
+        .mg-image-container {
+            width: 100% !important;
+            height: 220px !important;
+            background-color: #f8fafc !important;
+            border-radius: 1.25rem !important;
+            margin-bottom: 1.5rem !important;
+            overflow: hidden !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            border: 1px solid #e2e8f0 !important;
+        }
+
+        .mg-detail-img {
+            max-width: 100% !important;
+            max-height: 100% !important;
+            object-fit: contain !important;
+        }
+
         .mg-tag {
             display: inline-block !important;
             background-color: #dcfce7 !important;
             color: #166534 !important;
             font-size: 0.75rem !important;
-            font-weight: 700 !important;
+            font-weight: 800 !important;
             padding: 0.25rem 0.75rem !important;
             border-radius: 9999px !important;
-            margin-bottom: 1rem !important;
+            margin-bottom: 0.5rem !important;
             text-transform: uppercase !important;
         }
 
         .mg-detail-header {
             display: flex !important;
             align-items: center !important;
-            gap: 1rem !important;
+            justify-content: space-between !important;
             border-bottom: 2px solid #f1f5f9 !important;
             padding-bottom: 1rem !important;
-            margin-bottom: 1.5rem !important;
+            margin-bottom: 1rem !important;
         }
 
-        .mg-detail-title {
+                .mg-detail-title {
             font-size: 1.5rem !important;
             font-weight: 800 !important;
             color: #ef4444 !important;
@@ -515,23 +528,25 @@
         .mg-def-box {
             background-color: #f8fafc !important;
             border-radius: 1rem !important;
-            padding: 1.25rem !important;
+            padding: 1rem !important;
             border-left: 4px solid #3b82f6 !important;
+            margin-bottom: 1rem !important;
         }
     </style>
-<div class="mg-game-outer"><header class="text-center mb-10 relative z-10">
+<div class="mg-game-outer"><header class="text-center mb-8">
 <h1 class="text-3xl md:text-3xl font-extrabold mb-3 text-blue-700 uppercase tracking-tight">Work in pairs</h1>
 <p class="text-slate-500 text-sm md:text-lg italic">Click on each word to discuss or 🔊 to listen to the correct pronunciation.</p>
 </header><!-- Lưới từ vựng -->
-<div class="mg-word-grid" id="mg-grid-container"><!-- Words injected by JS --></div>
+<div class="mg-word-grid" id="mg-grid-container"></div>
 </div>
-<!-- Modal Chi tiết từ vựng -->
 <div id="mg-word-modal">
-<div class="mg-modal-content"><span class="mg-close-btn" onclick="closeModal()">×</span> <span class="mg-tag">Technical Term</span>
+<div class="mg-modal-content"><button class="absolute top-4 right-6 text-3xl text-slate-400 hover:text-slate-600" onclick="closeModal()">×</button>
+<div class="mg-image-container"><img id="mg-detail-img" alt="Component Image" class="mg-detail-img" /></div>
+<span class="mg-tag">Technical Term</span>
 <div class="mg-detail-header">
 <h2 id="mg-detail-title" class="mg-detail-title">Word</h2>
 <button id="mg-modal-speak" class="mg-speaker-large">🔊</button></div>
-<div id="mg-detail-ipa" class="text-slate-500 italic text-lg mb-4">/ipa/</div>
+<div id="mg-detail-ipa" class="text-amber-600 italic text-lg mb-4">/ipa/</div>
 <div class="space-y-4">
 <div class="mg-def-box">
 <p class="text-xs font-bold text-blue-600 uppercase mb-1">English Definition</p>
@@ -543,25 +558,112 @@
 </div>
 </div>
 </div>
-</div>
-<p>
 <script>
 const dictionary = {
-"Chemical reaction": { ipa: "/ˈkem.ɪ.kəl riˈæk.ʃən/", en: "A process that involves rearrangement of molecular structure.", vi: "Quá trình thay đổi cấu trúc phân tử của các chất." },
-"Electrochemical reaction": { ipa: "/iˌlek.trəʊˈkem.ɪ.kəl riˈæk.ʃən/", en: "A reaction that occurs between an electrolyte and an electrode.", vi: "Phản ứng xảy ra giữa chất điện phân và điện cực." },
-"Electrode": { ipa: "/iˈlek.trəʊd/", en: "A conductor through which electricity enters or leaves a system.", vi: "Một vật dẫn điện giúp dòng điện đi vào hoặc đi ra khỏi hệ thống." },
-"Negative plate": { ipa: "/ˈneɡ.ə.tɪv pleɪt/", en: "The electrode in a battery with an excess of electrons.", vi: "Bản điện cực trong ắc quy có dư thừa electron." },
-"Positive plate": { ipa: "/ˈpɒz.ə.tɪv pleɪt/", en: "The electrode in a battery that receives electrons.", vi: "Bản điện cực trong ắc quy tiếp nhận các electron." },
-"High-voltage": { ipa: "/ˌhaɪˈvəʊl.tɪdʒ/", en: "Electrical potential large enough to cause injury or damage.", vi: "Mức điện thế đủ lớn để có thể gây thương tích hoặc hư hỏng." },
-"Electrical spark": { ipa: "/iˈlek.trɪ.kəl spɑːk/", en: "A luminous discharge of electricity across a gap.", vi: "Sự phóng điện phát sáng qua một khe hở giữa hai điện cực." },
-"Voltage regulator": { ipa: "/ˈvəʊl.tɪdʒ ˈreɡ.jə.leɪ.tər/", en: "A device that maintains a constant voltage level.", vi: "Thiết bị dùng để duy trì mức điện áp ổn định." },
-"Vaporization": { ipa: "/ˌveɪ.pər.aɪˈzeɪ.ʃən/", en: "The phase transition of a substance from liquid to vapor.", vi: "Sự chuyển pha của một chất từ thể lỏng sang thể hơi." },
-"Humidity": { ipa: "/hjuːˈmɪd.ə.ti/", en: "The amount of water vapor in the air.", vi: "Lượng hơi nước có trong không khí." },
-"Magnetic switch": { ipa: "/mæɡˈnet.ɪk swɪtʃ/", en: "A switch that opens or closes using a magnetic field.", vi: "Loại công tắc đóng hoặc ngắt bằng cách sử dụng từ trường." },
-"Commutator": { ipa: "/ˈkɒm.jə.teɪ.tər/", en: "A device for reversing the direction of electric current in a motor.", vi: "Thiết bị dùng để đảo chiều dòng điện trong động cơ điện." },
-"Armature": { ipa: "/ˈɑː.mə.tʃər/", en: "The rotating part of an electric motor or generator.", vi: "Phần quay của động cơ điện hoặc máy phát điện." },
-"Field coil": { ipa: "/fiːld kɔɪl/", en: "An electromagnet used to generate a magnetic field in a machine.", vi: "Nam châm điện dùng để tạo ra từ trường trong máy điện." },
-"Generator": { ipa: "/ˈdʒen.ər.eɪ.tər/", en: "A machine that converts mechanical energy into electricity.", vi: "Máy dùng để chuyển đổi năng lượng cơ năng thành điện năng." },
+    "Chemical reaction": {
+        ipa: "/ˈkem.ɪ.kəl riˈæk.ʃən/",
+        img: "vocabulary/unit5/chemical_reaction.jpg",
+        en: "A process that involves rearrangement of molecular structure.",
+        vi: "Quá trình thay đổi cấu trúc phân tử của các chất."
+    },
+
+    "Electrochemical reaction": {
+        ipa: "/iˌlek.trəʊˈkem.ɪ.kəl riˈæk.ʃən/",
+        img: "vocabulary/unit5/electrochemical_reaction.jpg",
+        en: "A reaction that occurs between an electrolyte and an electrode.",
+        vi: "Phản ứng xảy ra giữa chất điện phân và điện cực."
+    },
+
+    "Electrode": {
+        ipa: "/iˈlek.trəʊd/",
+        img: "vocabulary/unit5/electrode.jpg",
+        en: "A conductor through which electricity enters or leaves a system.",
+        vi: "Một vật dẫn điện giúp dòng điện đi vào hoặc đi ra khỏi hệ thống."
+    },
+
+    "Negative plate": {
+        ipa: "/ˈneɡ.ə.tɪv pleɪt/",
+        img: "vocabulary/unit5/negative_plate.jpg",
+        en: "The electrode in a battery with an excess of electrons.",
+        vi: "Bản điện cực trong ắc quy có dư thừa electron."
+    },
+
+    "Positive plate": {
+        ipa: "/ˈpɒz.ə.tɪv pleɪt/",
+        img: "vocabulary/unit5/positive_plate.jpg",
+        en: "The electrode in a battery that receives electrons.",
+        vi: "Bản điện cực trong ắc quy tiếp nhận các electron."
+    },
+
+    "High-voltage": {
+        ipa: "/ˌhaɪˈvəʊl.tɪdʒ/",
+        img: "vocabulary/unit5/high_voltage.jpg",
+        en: "Electrical potential large enough to cause injury or damage.",
+        vi: "Mức điện thế đủ lớn để có thể gây thương tích hoặc hư hỏng."
+    },
+
+    "Electrical spark": {
+        ipa: "/iˈlek.trɪ.kəl spɑːk/",
+        img: "vocabulary/unit5/electrical_spark.jpg",
+        en: "A luminous discharge of electricity across a gap.",
+        vi: "Sự phóng điện phát sáng qua một khe hở giữa hai điện cực."
+    },
+
+    "Voltage regulator": {
+        ipa: "/ˈvəʊl.tɪdʒ ˈreɡ.jə.leɪ.tər/",
+        img: "vocabulary/unit5/voltage_regulator.jpg",
+        en: "A device that maintains a constant voltage level.",
+        vi: "Thiết bị dùng để duy trì mức điện áp ổn định."
+    },
+
+    "Vaporization": {
+        ipa: "/ˌveɪ.pər.aɪˈzeɪ.ʃən/",
+        img: "vocabulary/unit5/vaporization.jpg",
+        en: "The phase transition of a substance from liquid to vapor.",
+        vi: "Sự chuyển pha của một chất từ thể lỏng sang thể hơi."
+    },
+
+    "Humidity": {
+        ipa: "/hjuːˈmɪd.ə.ti/",
+        img: "vocabulary/unit5/humidity.jpg",
+        en: "The amount of water vapor in the air.",
+        vi: "Lượng hơi nước có trong không khí."
+    },
+
+    "Magnetic switch": {
+        ipa: "/mæɡˈnet.ɪk swɪtʃ/",
+        img: "vocabulary/unit5/magnetic_switch.jpg",
+        en: "A switch that opens or closes using a magnetic field.",
+        vi: "Loại công tắc đóng hoặc ngắt bằng cách sử dụng từ trường."
+    },
+
+    "Commutator": {
+        ipa: "/ˈkɒm.jə.teɪ.tər/",
+        img: "vocabulary/unit5/commutator.jpg",
+        en: "A device for reversing the direction of electric current in a motor.",
+        vi: "Thiết bị dùng để đảo chiều dòng điện trong động cơ điện."
+    },
+
+    "Armature": {
+        ipa: "/ˈɑː.mə.tʃər/",
+        img: "vocabulary/unit5/armature.jpg",
+        en: "The rotating part of an electric motor or generator.",
+        vi: "Phần quay của động cơ điện hoặc máy phát điện."
+    },
+
+    "Field coil": {
+        ipa: "/fiːld kɔɪl/",
+        img: "vocabulary/unit5/field_coil.jpg",
+        en: "An electromagnet used to generate a magnetic field in a machine.",
+        vi: "Nam châm điện dùng để tạo ra từ trường trong máy điện."
+    },
+
+    "Generator": {
+        ipa: "/ˈdʒen.ər.eɪ.tər/",
+        img: "vocabulary/unit5/generator.jpg",
+        en: "A machine that converts mechanical energy into electricity.",
+        vi: "Máy dùng để chuyển đổi năng lượng cơ năng thành điện năng."
+    }
 };
         function renderGrid() {
             const container = document.getElementById('mg-grid-container');
@@ -570,16 +672,12 @@ const dictionary = {
                 card.className = 'mg-word-card';
                 card.innerHTML = `
                     <span>${word}</span>
-                    <button class="mg-mini-speaker" title="Listen">🔊</button>
+                    <button class="mg-mini-speaker">🔊</button>
                 `;
-                
-                // Nút loa nhỏ
                 card.querySelector('.mg-mini-speaker').onclick = (e) => {
                     e.stopPropagation();
                     speak(word);
                 };
-                
-                // Click vào card để mở chi tiết
                 card.onclick = () => showDetail(word);
                 container.appendChild(card);
             });
@@ -601,9 +699,9 @@ const dictionary = {
             document.getElementById('mg-detail-ipa').innerText = data.ipa;
             document.getElementById('mg-detail-en').innerText = data.en;
             document.getElementById('mg-detail-vi').innerText = data.vi;
+            document.getElementById('mg-detail-img').src = data.img;
             
             document.getElementById('mg-modal-speak').onclick = () => speak(word);
-            
             modal.style.display = 'flex';
         }
 
@@ -612,12 +710,7 @@ const dictionary = {
             window.speechSynthesis.cancel();
         }
 
-        // Đóng khi click ngoài vùng modal
-        window.onclick = (event) => {
-            const modal = document.getElementById('mg-word-modal');
-            if (event.target == modal) closeModal();
-        }
-
+        window.onclick = (e) => { if (e.target.id === 'mg-word-modal') closeModal(); }
         window.onload = renderGrid;
     </script>
 </p></div>
